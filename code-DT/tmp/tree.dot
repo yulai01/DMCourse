@@ -1,0 +1,24 @@
+digraph Tree {
+node [shape=box] ;
+0 [label="Sex <= 0.5\nentropy = 0.961\nsamples = 891\nvalue = [549, 342]"] ;
+1 [label="Pclass <= 2.5\nentropy = 0.824\nsamples = 314\nvalue = [81, 233]"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="Pclass <= 1.5\nentropy = 0.299\nsamples = 170\nvalue = [9, 161]"] ;
+1 -> 2 ;
+3 [label="entropy = 0.204\nsamples = 94\nvalue = [3, 91]"] ;
+2 -> 3 ;
+4 [label="entropy = 0.398\nsamples = 76\nvalue = [6, 70]"] ;
+2 -> 4 ;
+5 [label="entropy = 1.0\nsamples = 144\nvalue = [72, 72]"] ;
+1 -> 5 ;
+6 [label="Pclass <= 1.5\nentropy = 0.699\nsamples = 577\nvalue = [468, 109]"] ;
+0 -> 6 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+7 [label="entropy = 0.95\nsamples = 122\nvalue = [77, 45]"] ;
+6 -> 7 ;
+8 [label="Pclass <= 2.5\nentropy = 0.586\nsamples = 455\nvalue = [391, 64]"] ;
+6 -> 8 ;
+9 [label="entropy = 0.628\nsamples = 108\nvalue = [91, 17]"] ;
+8 -> 9 ;
+10 [label="entropy = 0.572\nsamples = 347\nvalue = [300, 47]"] ;
+8 -> 10 ;
+}
